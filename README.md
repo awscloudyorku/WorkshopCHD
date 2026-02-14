@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AWS Full-Stack Hackathon Deployment Demo
 
-## Getting Started
+This project is a demo full-stack template designed to show hackathon participants how to deploy a real production-style application using AWS services. It demonstrates how modern teams ship applications quickly using managed cloud infrastructure.
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The template includes:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Frontend connected to a backend API
+- Automated deployment using AWS Amplify
+- CI/CD pipeline triggered by GitHub commits
+- Preview deployments for pull requests
+- File and asset storage using Amazon S3
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The goal is to help developers move from local development to a live, publicly accessible application with minimal setup.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Key Concepts Demonstrated
 
-## Learn More
+- GitHub-based deployment workflow  
+- Automatic builds and hosting with AWS Amplify  
+- Continuous integration and continuous deployment (CI/CD)  
+- Preview environments for safe testing  
+- Cloud storage using Amazon S3  
 
-To learn more about Next.js, take a look at the following resources:
+As shown in the workshop architecture, code pushed to GitHub automatically triggers Amplify builds and deploys a live version of the app, while S3 handles file storage and assets. :contentReference[oaicite:0]{index=0}
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Purpose
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project serves as a reference implementation for:
 
-## Deploy on Vercel
+- Hackathon teams deploying their first cloud app  
+- Learning real deployment workflows used in industry  
+- Understanding how frontend, backend, CI/CD, and storage integrate together  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Why This Matters
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Many hackathon projects fail during deployment due to lack of proper infrastructure. This template provides a reliable workflow so teams can focus on building features instead of worrying about deployment.
+
+## Stack
+
+- AWS Amplify (Hosting, CI/CD)
+- Amazon S3 (Storage)
+- GitHub (Version control & deployment trigger)
+- Full-stack web app template (frontend + backend)
+
+---
+
